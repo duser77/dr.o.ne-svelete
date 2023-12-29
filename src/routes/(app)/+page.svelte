@@ -11,7 +11,7 @@
 	import { goto, invalidateAll } from '$app/navigation';
 	import { addIdea, deleteIdea } from '$lib/ideas.js';
 	import { account, databases } from '$lib/appwrite';
-	import { Link } from "svelte-routing";
+	import { Link,Router,Route } from "svelte-routing";
 
 	
 	const add = async (e) => {

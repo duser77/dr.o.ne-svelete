@@ -2,7 +2,6 @@
 	
 </script>
 
-<template>
 	<div class="page light">
 		
 		<div class="navbar navbar-style-1 navbar-transparent">
@@ -14,8 +13,9 @@
 				</a>
 				<div class="title">Details</div>
 				<div class="right">
-					<a href="#" class="add-wishlist-btn" >
-						<!-- @click=${openDemo1} -->
+					<a href="#" class="add-wishlist-btn" 
+					>
+					<!-- @click=${openDemo1} -->
 						<i class="far fa-bookmark"></i>
 						<i class="fas fa-bookmark"></i>
 					</a>
@@ -26,17 +26,17 @@
 		<div class="page-content item-details pt-0 pb-0">
 			
 			<div class="dz-banner-heading bg-primary">
-				<img src="img/products/single/pic2.png" class="bnr-img" alt=""/>
+				<img src="img/products/single/pic5.png" class="bnr-img" alt=""/>
 			</div>
 			
 			<div class="dz-banner-height"></div>
 			
 			<div class="fixed-content container">
 				<div class="clearfix">
-					<h3 class="ma-0">Te de Indonesia</h3>
-					<p>El te de Indonesia tiene crema y un receta muy famoso por su sabor dulce</p>
+					<h3 class="ma-0">Helados BON XGrande</h3>
+					<p>Delicioso en frente la Sirena Villa Mella</p>
 				</div>
-				<div class="item-rating">4.5</div>
+				<div class="item-rating">4.7</div>
 				<div class="dz-range">
 					<div class="pl-20 pr-20">
 						<div class="range-slider range-slider-init" data-min="0" data-max="100" data-step="4" data-value="25"></div>
@@ -49,7 +49,7 @@
 					</ul>
 				</div>
 				<div class="price-bx">
-					<h2 class="price"><sup>$</sup>150 <del>$304</del></h2>
+					<h2 class="price"><sup>$</sup>5.8 <del>$8.0</del></h2>
 					<div class="stepper stepper-init stepper-round">
 						<div class="stepper-button-minus"></div>
 						<div class="stepper-input-wrap">
@@ -59,16 +59,16 @@
 					</div>
 				</div>	
 					
-				<p class="mt-0 mb-30">*Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				<p class="mt-0 mb-30">*)Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 				
-				<a href="/checkout-payment-method/" class="button-large button rounded-xl button-fill">Hacer Orden <span>$150</span></a>
+				<a href="/checkout-payment-method/" class="button-large button rounded-xl button-fill">Place order <span>$17.4</span></a>
 				
 			</div>
 			
 		</div>
 		
 	</div>
-</template>
+
 <!-- <script>
 export default (props) => {
     const openDemo1 = () => {
@@ -77,7 +77,6 @@ export default (props) => {
 	return $render;
 }
 </script> -->
-
 <style>
 
 </style>

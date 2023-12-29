@@ -1,16 +1,33 @@
 <script>
-	// export default (props) => {
-	// 	const openDemo1 = () => {
-	// 		$('.add-wishlist-btn').toggleClass('active');
-	// 	}
-	// 	return $render;
-	// }
-
-	const openDemo1 =()=>{
-		
+	let isWishlistActive = false;
+  
+	const openDemo1 = () => {
+	  isWishlistActive = !isWishlistActive;
+	};
+  </script>
+  
+  <style>
+	.add-wishlist-btn.active .far.fa-bookmark {
+	  display: none;
 	}
-	</script>
-<template>
+  
+	.add-wishlist-btn.active .fas.fa-bookmark {
+	  display: inline-block;
+	}
+  
+	.add-wishlist-btn .far.fa-bookmark,
+	.add-wishlist-btn .fas.fa-bookmark {
+	  display: inline-block;
+	}
+  
+	.add-wishlist-btn.active .far.fa-bookmark,
+	.add-wishlist-btn:not(.active) .fas.fa-bookmark {
+	  display: none;
+	}
+  </style>
+  
+  
+  
 	<div class="page light">
 		
 		<div class="navbar navbar-style-1 navbar-transparent">
@@ -22,10 +39,13 @@
 				</a>
 				<div class="title">Details</div>
 				<div class="right">
-					<a href="#" class="add-wishlist-btn" on:click={openDemo1}>
-						<i class="far fa-bookmark"></i>
-						<i class="fas fa-bookmark"></i>
-					</a>
+					<a href="#" class:active={isWishlistActive} class="add-wishlist-btn" on:click={openDemo1}>
+						{#if isWishlistActive}
+						  <i class="far fa-bookmark"></i>
+						{:else}
+						  <i class="fas fa-bookmark"></i>
+						{/if}
+					  </a>
 				</div>
 			</div>
 		</div>
@@ -75,8 +95,5 @@
 		</div>
 		
 	</div>
-</template>
 
-<style>
 
-</style>

@@ -1,4 +1,4 @@
-<template>
+
 	<div class="page light">
 		
 		<div class="navbar navbar-style-1 navbar-transparent">
@@ -10,8 +10,7 @@
 				</a>
 				<div class="title">Details</div>
 				<div class="right">
-					<a href="#" class="add-wishlist-btn" >
-						<!-- @click=${openDemo1} -->
+					<a href="#" class="add-wishlist-btn" on:click={openDemo1}>
 						<i class="far fa-bookmark"></i>
 						<i class="fas fa-bookmark"></i>
 					</a>
@@ -22,17 +21,17 @@
 		<div class="page-content item-details pt-0 pb-0">
 			
 			<div class="dz-banner-heading bg-primary">
-				<img src="img/products/single/pic4.png" class="bnr-img" alt=""/>
+				<img src="img/products/single/pic1.png" class="bnr-img" alt=""/>
 			</div>
 			
 			<div class="dz-banner-height"></div>
 			
 			<div class="fixed-content container">
 				<div class="clearfix">
-					<h3 class="ma-0">Tylenol Ultra</h3>
-					<p>Se quita dolor de cabeza de una vez!</p>
+					<h3 class="ma-0">Pizza Hut XL Queso</h3>
+					<p>Pizza Hut Premio Pizza X-Grande con Queso, y Incluye una Coca-Cola Con Hielo</p>
 				</div>
-				<div class="item-rating">4.9</div>
+				<div class="item-rating">4.2</div>
 				<div class="dz-range">
 					<div class="pl-20 pr-20">
 						<div class="range-slider range-slider-init" data-min="0" data-max="100" data-step="4" data-value="25"></div>
@@ -45,7 +44,7 @@
 					</ul>
 				</div>
 				<div class="price-bx">
-					<h2 class="price"><sup>$</sup>25 <del>$54</del></h2>
+					<h2 class="price"><sup>$</sup>500 <del>$899</del></h2>
 					<div class="stepper stepper-init stepper-round">
 						<div class="stepper-button-minus"></div>
 						<div class="stepper-input-wrap">
@@ -55,25 +54,16 @@
 					</div>
 				</div>	
 					
-				<p class="mt-0 mb-30">*Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				<p class="mt-0 mb-30">*)Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 				
-				<a href="/checkout-payment-method/" class="button-large button rounded-xl button-fill">Hacer Orden <span>$25</span></a>
+				<a href="/checkout-payment-method/" class="button-large button rounded-xl button-fill">Hacer Orden <span>$500</span></a>
 				
 			</div>
 			
 		</div>
 		
 	</div>
-</template>
-<!-- <script>
-export default (props) => {
-    const openDemo1 = () => {
-		$('.add-wishlist-btn').toggleClass('active');
-    }
-	return $render;
-}
-</script> -->
 
-<style>
+<script>
 
-</style>
+</script>
